@@ -1,0 +1,40 @@
+<body>
+    <div class="box">
+        <div class="dropdown" (click) = "toggleArrow()"> {{name}}
+            <span class = "left-icon"></span>
+            <span class = "right-icon"></span>
+            <div class="items">
+                <label style="--i:1" (click) = "lunchClick()"><span></span>Lunch Menu</label>
+                <label style="--i:2" (click) = "dinnerClick()"><span></span>Dinner Menu</label>
+                <label style="--i:3" (click) = "dinnerSpecialsClick()"><span></span>Dinner Specials</label>
+                <label style="--i:4" (click) = "desertClick()"><span></span>Desert Menu</label>
+            </div>
+
+        </div>
+        <div class="food-text">
+            <div class ="leftText">
+                <p *ngFor="let food of activeMenu; let i = index">
+                    
+                    <span class = "item-text" *ngIf="i % 2 === 0">{{food.item }}</span>
+                    <br>
+                    <span class = "description-text" *ngIf="i % 2 === 0" >{{food.description }} {{food.price}}</span>
+                    <span *ngIf="name === 'Desert' && i % 2 === 0">
+                    <img class="image" src="{{food.pic}}">
+                    </span>
+                </p>
+            </div>
+              
+            <div class = "rightText">
+                <p *ngFor="let food of activeMenu; let i = index">
+                    <span class = "item-text" *ngIf="i % 2 === 1">{{food.item }}</span>
+                    <br>
+                    <span class = "description-text" *ngIf="i % 2 === 1" >{{food.description }} {{food.price}}</span>
+                    <span *ngIf="name === 'Desert' && i % 2 === 1">
+                        <img class="image" src="{{food.pic}}">
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div> 
+
+</body>

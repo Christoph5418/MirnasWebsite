@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    left: 25%;
+    top: 15%;
+  }
+  
+  .logos img {
+    margin: 10px;
+    border: .5px solid black;
+    border-radius: 20px;
+    background: rgb(242, 242, 242);
+    padding: 10px;
+    transition: .5s;
+    box-shadow: 0 5px 10px rgba(0,0,0, .2);
+
+  }
+
+  .logos img:hover {
+    background-color: lightgray;
+ 
+  }
+  img{
+    max-width: 275px;
+  }
+
+  h1{
+    color: brown;
+  }
+  .container{
+    position: relative;
+    right: 20%;
+  }
+
+  p{
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1090px){
+ 
+    body{
+        overflow-x: hidden;
+        max-height: 77vh;
+    }
+    img{
+        max-width: 200px;
+        position: relative;
+        right: 40%;
+    }
+
+    .container{
+        display: none;
+    }
+
+}
