@@ -14,12 +14,11 @@
         <div class="food-text">
             <div class ="leftText">
                 <p *ngFor="let food of activeMenu; let i = index">
-                    
                     <span class = "item-text" *ngIf="i % 2 === 0">{{food.item }}</span>
                     <br>
                     <span class = "description-text" *ngIf="i % 2 === 0" >{{food.description }} {{food.price}}</span>
                     <span *ngIf="name === 'Desert' && i % 2 === 0">
-                    <img class="image" src="{{food.pic}}">
+                        <img class="image" src="{{food.pic}}">
                     </span>
                 </p>
             </div>

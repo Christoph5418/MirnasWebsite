@@ -286,7 +286,7 @@ export const lunchMenu =[
       pic: "",
     },   
      {
-      item: "Calamari grilled",
+      item: "Calamari Grilled",
       price: "18.00",
       description: "Served in a garlic white wine lemon sauce and spices",
       pic: "",
