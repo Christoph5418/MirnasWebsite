@@ -13,6 +13,7 @@
         </div>
 
         <br><br><br>
+
         <span *ngIf="name === 'Lunch'">
 
             <h3>Soups</h3>
@@ -55,7 +56,132 @@
             </div>
 
             <br><br><br>
+
+            <p class = "salad-text">Add grilled chicken to any salad 7.00 <br>
+                Add 4 grilled shrimp to any salad 8.00 <br>
+                Add cajun shrimp & chicken to any salad 8.00 <br>
+                Add grilled beef filet strips 8.00 <br>
+                Add 8oz grilled salmon to any salad 12.00 <br>
+                Sharing Salads 2.00 Extra
+            </p>
+
+            <br><br><br>
+            <h3>Cold Platters</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='platter'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='platter'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='platter'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='platter'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+
+            <br><br><br>
+
+            <h3 class>Cold Sandwiches</h3>
+            <p class = "cold-sandwich-text">All sandwiches are served on sesame French bread with Mirna's potato salad and fresh fruits (hogie style)</p>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='sandwich'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='sandwich'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='sandwich'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='sandwich'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <br><br><br>
+            <h3>Mirna's Grilled Pita Wraps</h3>
+            <p class = "cold-sandwich-text">Served with Mirna's homemade potato salad and fruits</p>
+
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='wrap'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='wrap'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='wrap'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='wrap'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+
+            <br><br><br>
+            <h3>Sandwiches And Burgers From The Grill</h3>
+            <p class = "cold-sandwich-text">Sandwiches are served on sesame French bread, Burgers on Kaiser roll with French fries and fresh fruits</p>
+
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='grill'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='grill'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='grill'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='grill'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+
+
+            <br><br><br>
+            <h3>Pastas</h3>
+            <p class = "cold-sandwich-text">All pastas are cooked to order</p>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='pasta'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='pasta'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='pasta'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='pasta'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+
+            <br><br><br>
             <h3>Entrées</h3>
+            <p class = "cold-sandwich-text">The following entrées are served with vegetable du jour OR side of spaghetti in our marinara sauce</p>
 
             <div class="food-text">
                 <div class ="leftText">
@@ -140,7 +266,41 @@
             </div>
 
             <br><br><br>
+            <p class = "salad-text">Add grilled chicken to any salad 7.00 <br>
+                Add 4 grilled shrimp to any salad 8.00 <br>
+                Add cajun shrimp & chicken to any salad 8.00 <br>
+                Add grilled beef filet strips 8.00 <br>
+                Add 8oz grilled salmon to any salad 12.00 <br>
+                Sharing Salads 2.00 Extra
+            </p>
+
+            <br><br><br>
+            <h3>Pastas</h3>
+            <p class = "cold-sandwich-text">All pastas are cooked to order</p>
+
+            
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='pasta'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='pasta'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='pasta'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='pasta'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br>
             <h3>Entrées</h3>
+            <p class = "cold-sandwich-text">The following entrees are served with potato and vegetable du jour</p>
+
 
             <div class="food-text">
                 <div class ="leftText">
@@ -207,6 +367,8 @@
 
             <br><br><br>
             <h3>Entrées</h3>
+            <p class = "cold-sandwich-text">The following entrees are served with potato and vegetable du jour</p>
+
 
             <div class="food-text">
                 <div class ="leftText">

@@ -227,6 +227,8 @@ h3{
     justify-content: center;
     text-align: center;
     font-size: 30px;
+    width: 300px;
+    transform: translateX(-30px);
 }
 
 .warnings{
@@ -234,4 +236,26 @@ h3{
     transform: translateX(-250px);
     text-align: center;
     left: 0;
+}
+
+.salad-text{
+    width: 385px;
+    font-style: italic;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transform: translateX(-65px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    text-align: center;
+}
+
+.cold-sandwich-text{
+    font-style: italic;
+    color: gray;
+    width: 500px;
+    transform: translateX(-130px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
