@@ -139,7 +139,7 @@ body{
 .rightText{
     position: relative;
     left: 60px;
-    top: 20px;
+    top: 40px;
 }
 
 .item-text{
@@ -214,6 +214,24 @@ body{
         top: 10%;
     }
 
+    .warnings{
+        position: relative;
+        max-width: 400px;
+        margin-left: 150px;
 
+    }
+}
 
+h3{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.warnings{
+    width: 800px;
+    transform: translateX(-250px);
+    text-align: center;
+    left: 0;
 }

@@ -11,7 +11,254 @@
             </div>
 
         </div>
-        <div class="food-text">
+
+        <br><br><br>
+        <span *ngIf="name === 'Lunch'">
+
+            <h3>Soups</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='soup'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='soup'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='soup'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='soup'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br>
+            <h3>Salads</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='salad'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='salad'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='salad'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='salad'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br>
+            <h3>Entrées</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='entree'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='entree'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='entree'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='entree'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <p class="warnings">*Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of food-borne illness</p>
+
+        </span>
+
+        <span *ngIf="name === 'Dinner'">
+
+            <h3>Soups</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='soup'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='soup'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='soup'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='soup'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br>
+            <h3>Appetizers</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='appetizer'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='appetizer'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='appetizer'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='appetizer'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br>
+            <h3>Salads</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='salad'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='salad'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='salad'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='salad'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br>
+            <h3>Entrées</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='entree'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='entree'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='entree'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='entree'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br><br><br>
+            <p class="warnings">*Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of food-borne illness</p>
+
+        </span>
+
+        <span *ngIf="name === 'Specials'">
+
+            <h3>Soups</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='soup'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='soup'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='soup'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='soup'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br>
+            <h3>Appetizers</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='appetizer'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='appetizer'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='appetizer'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='appetizer'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+
+            <br><br><br>
+            <h3>Entrées</h3>
+
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0 && food.type ==='entree'">{{food.item}} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 0 && food.type ==='entree'" >{{food.description }} {{food.price}} <br><br></span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1 && food.type ==='entree'">{{food.item }} <br></span>
+                        <span class = "description-text" *ngIf="i % 2 === 1 && food.type ==='entree'" >{{food.description }} {{food.price}} <br><br></span>
+                    </p>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <p class="warnings">*Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of food-borne illness</p>
+        </span>
+
+
+        <span *ngIf="name === 'Deserts'">
+
+            <h3>Deserts</h3>
+            <div class="food-text">
+                <div class ="leftText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 0">{{food.item }}</span>
+                        <br>
+                        <span class = "description-text" *ngIf="i % 2 === 0" >{{food.description }} {{food.price}}                             <img class="image" src="{{food.pic}}">
+                        </span>
+
+                    </p>
+                </div>
+                  
+                <div class = "rightText">
+                    <p *ngFor="let food of activeMenu; let i = index">
+                        <span class = "item-text" *ngIf="i % 2 === 1">{{food.item }}</span>
+                        <br>
+                        <span class = "description-text" *ngIf="i % 2 === 1" >{{food.description }} {{food.price}} <img class="image" src="{{food.pic}}">
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </span>
+
+        
+
+
+
+        <!-- <div class="food-text">
             <div class ="leftText">
                 <p *ngFor="let food of activeMenu; let i = index">
                     <span class = "item-text" *ngIf="i % 2 === 0">{{food.item }}</span>
@@ -33,7 +280,7 @@
                     </span>
                 </p>
             </div>
-        </div>
+        </div> -->
     </div> 
 
 </body>

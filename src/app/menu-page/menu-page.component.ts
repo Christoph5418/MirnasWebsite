@@ -6,6 +6,7 @@ interface men{
     price: string;
     description: string;
     pic: string;
+    type: string;
 }
 
 @Component({
@@ -19,7 +20,6 @@ export class MenuPageComponent implements OnInit, AfterViewInit{
   lunchMenu = lunchMenu;
   dinnerMenu = dinnerMenu;
   dinnerSpecialsMenu = dinnerSpecialsMenu;
-  desertMenu = desertMenu;
 
 
 
@@ -34,62 +34,53 @@ export class MenuPageComponent implements OnInit, AfterViewInit{
   }
 
   ngAfterViewInit(): void {
-    this.lunchClick();
+     this.lunchClick();
   }
 
   getWindowWidth(){
     let tempMenu: men[] = [];
 
     if (this.windowWidth < 1090) {
-      for(let i = 0; i < this.lunchMenu.length; i++)
+      for(let i = 0; i < this.lunchMenu.length / 2; i++)
       {
         tempMenu[i * 2] = this.lunchMenu[i];
       }
- 
+      let x: number = 0;
       for(let i = (this.lunchMenu.length / 2); i < this.lunchMenu.length; i++)
       {
-         tempMenu[i * 2 + 1] = this.lunchMenu[i];
+         tempMenu[x * 2 + 1] = this.lunchMenu[i];
+         x++;
       }
       this.lunchMenu = tempMenu;
 
 
       tempMenu = [];
+      x = 0
 
-      for(let i = 0; i < this.dinnerMenu.length; i++){
+      for(let i = 0; i < this.dinnerMenu.length / 2; i++){
+
         tempMenu[i * 2] = this.dinnerMenu[i];
       }
  
       for(let i = (this.dinnerMenu.length / 2); i < this.dinnerMenu.length; i++){
-         tempMenu[i * 2 + 1] = this.dinnerMenu[i];
+         tempMenu[x * 2 + 1] = this.dinnerMenu[i];
+         x++;
       }
        this.dinnerMenu = tempMenu;
 
       tempMenu = [];
+      x = 0;
 
-      for(let i = 0; i < this.dinnerSpecialsMenu.length; i++){
+      for(let i = 0; i < this.dinnerSpecialsMenu.length / 2; i++){
         tempMenu[i * 2] = this.dinnerSpecialsMenu[i];
       }
  
       for(let i = (this.dinnerSpecialsMenu.length / 2); i < this.dinnerSpecialsMenu.length; i++){
-         tempMenu[i * 2 + 1] = this.dinnerSpecialsMenu[i];
+         tempMenu[x * 2 + 1] = this.dinnerSpecialsMenu[i];
+         x++;
       }
 
       this.dinnerSpecialsMenu = tempMenu;
-       
-       tempMenu = [];
-
-       for(let i = 0; i < this.desertMenu.length; i++){
-         tempMenu[i * 2] = this.desertMenu[i];
-       }
-  
-       for(let i = (this.desertMenu.length / 2); i < this.desertMenu.length; i++){
-          tempMenu[i * 2 + 1] = this.desertMenu[i];
-       }
-        this.desertMenu = tempMenu;
-
-
-
-
     } 
   }
 
@@ -122,7 +113,7 @@ export class MenuPageComponent implements OnInit, AfterViewInit{
 
   desertClick(){
    this.activeMenu = desertMenu; //cannot understand why phone acts weird when it's this.desertMenu
-   this.name = "Desert";
+   this.name = "Deserts";
   }
 
  
