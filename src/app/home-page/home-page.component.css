@@ -1,3 +1,344 @@
 body{
-    background-color: #d5d0d6;
+    min-height: 300vh;
+    overflow: hidden;
+}
+
+.image-container{
+    min-width: 100%;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 3.5px solid black;
+}
+
+h1{
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    color: black;
+}
+
+h2{
+    color: brown;
+    font-style: italic;
+    font-size: 21px;
+}
+
+.info-part{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.info-part p{
+    margin-top: 25px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    font-size: 14px;
+    color: rgb(78, 78, 78);
+}
+
+.menu-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container1 {
+    position: relative;
+    min-width: 100%;
+    max-height: 550px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+  }
+  .image-container1 img{
+    max-height: 550px;
+    min-width: 100%;
+    object-fit: cover;
+    border-top: 3.5px solid black;
+    border-bottom: 1px solid black;
+
+  }
+  
+  .menu-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border: 1.5px solid white;
+    transition: ease 1s;
+    border-radius: 10px;
+  }
+
+  .menu-text:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    cursor: pointer;
+    color: brown;
+    border: 1.5px solid black;
+
+
+  }
+  
+
+  .private-parties-part {
+    display: flex;
+    align-items: center;
+
+
+  }
+  
+  .private-parties-part img {
+    width: 40%; /* Adjust the width as needed */
+    object-fit: cover;
+    min-height: 450px;
+    transform: translateX(-25px);
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .private-parties-text {
+    flex: 1;
+    padding-left: 20px; /* Adjust the padding as needed */
+    transform: translateY(-50px);
+    padding: 50px;
+    transform: translateX(25px);
+
+
+  }
+  
+  .private-parties-text h4 {
+    font-size: 30px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: brown; /* Adjust the color as needed */
+  }
+
+  .private-parties-part p{
+    color: rgb(78, 78, 78);
+    width: 90%;
+  }
+
+  .pp-btn{
+    border: 1px solid black;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: ease 1s;
+    color: black;
+  }
+
+  .pp-btn:hover{
+    background-color: rgba(253, 255, 157, 0.3);
+    color: brown;
+  }
+
+  .reserve-part {
+    display: flex;
+    align-items: center;
+
+
+  }
+  
+  .reserve-part img {
+    width: 40%; /* Adjust the width as needed */
+    object-fit: cover;
+    min-height: 450px;
+    transform: translateX(-25px);
+    border: 1px solid black;
+    border-radius: 10px;
+    transform: translateX(25px);
+
+  }
+  
+  .reserve-text {
+    flex: 1;
+    padding-left: 20px; /* Adjust the padding as needed */
+    transform: translateY(-50px);
+    padding: 50px;
+    transform: translateX(25px);
+
+
+  }
+
+  .reserve-text h4 {
+    font-size: 30px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: brown; /* Adjust the color as needed */
+  }
+
+  .reserve-part p{
+    color: rgb(78, 78, 78);
+    width: 90%;
+  }
+
+  footer {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .business-hours,
+  .contact-us {
+    flex: 1;
+  }
+  
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  .contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #555;
+  }
+  
+
+  @media(max-width: 1090px){
+
+    .top-text{
+        font-size: 35px;
+    }
+
+    .image-container{
+        min-width: 100%;
+        max-height: 550px;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        border-bottom: 3.5px solid black;
+    }
+
+    .info-part h2{
+        font-size: 14px;
+    }
+    .info-part p{
+        font-size: 10px;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+    .image-container1 img{
+        max-height: 450px;
+        min-width: 100%;
+        object-fit: cover;
+        border-top: 3.5px solid black;
+        border-bottom: 1px solid black;
+      }
+
+      .reserve-part{
+        flex-direction: column;
+      }
+
+        
+    .reserve-part img {
+        width: 80%; /* Adjust the width as needed */
+        min-height: 350px;
+        transform: translateX(0px);
+  }
+
+  .reserve-text{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reserve-text h4{
+    width: 400px;
+    margin-left: 0;
+    margin-right: 0;
+    transform: translateX(-17.5px);
+    font-size: 26px;
+  }
+  .reserve-text .pp-btn{
+    position: absolute;
+    transform: translateX(-80px);
+  }
+
+
+  .private-parties-part{
+    flex-direction: column-reverse;
+  }
+
+  .private-parties-part img {
+    width: 80%; /* Adjust the width as needed */
+    min-height: 350px;
+    transform: translateX(0px);
+  }
+
+  .private-parties-text{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .private-parties-text h4{
+    width: 400px;
+    margin-left: 0;
+    margin-right: 0;
+    transform: translateX(-17.5px);
+    font-size: 26px;
+  }
+  .private-parties-text .pp-btn{
+    position: absolute;
+    transform: translateX(-125px);
+  }
+
+  .footer-content{
+    font-size: 10px;
+  }
+  h4{
+    font-size: 14px;
+  }
+
+  .menu-text{
+    font-size: 17px;
+  }
+
 }
