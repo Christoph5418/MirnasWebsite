@@ -1,6 +1,6 @@
 
 body{
-    min-height: 12vh;
+    min-height: 10vh;
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
@@ -8,7 +8,7 @@ body{
 
 
 header{
-    position: relative;
+    position: fixed;
     width: 100%;
     top: 0;
     right: 0;
@@ -19,6 +19,7 @@ header{
     padding: 28px 12%;
     transition: all .50s ease;
     background: #222327;
+    height: 10vh;
 
 
 }
@@ -133,7 +134,7 @@ header{
     display: none;
 }
 
-@media (max-width: 1280px)
+@media (max-width: 1090px)
 {
     header{
         padding: 14px 2%;
@@ -212,10 +213,6 @@ header{
         right: 2%;
 
     }
-
-
-    
-
 }
 
 .sub-menu-wrap{
@@ -227,6 +224,4 @@ header{
     font-size: 15px;
     display: flex;
 }
-
-
 

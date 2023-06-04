@@ -1,0 +1,285 @@
+body{
+  overflow: hidden;
+}
+
+.top-part{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-part .reserve{
+
+    margin-right: 75px;
+    margin-left: 75px;
+}
+
+
+.menu-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container1 {
+    position: relative;
+    min-width: 100%;
+    max-height: 550px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+  }
+  .image-container1 img{
+    max-height: 550px;
+    min-width: 100%;
+    object-fit: cover;
+    border-top: 1x solid black;
+    border-bottom: 1px solid black;
+
+  }
+  
+  .menu-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border: 1.5px solid white;
+    transition: ease 1s;
+    border-radius: 10px;
+  }
+
+  .menu-text:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    cursor: pointer;
+    color: brown;
+    border: 1.5px solid black;
+
+
+  }
+  
+
+h1{
+    transform: translateX(20px);
+    font-size: 45px;
+}
+
+.map-container {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .map{
+    width: 80%;
+  }
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: ease .5s;
+
+}
+
+a:hover{
+    color: brown;
+}
+
+.top-part .address{
+    padding-right: 40px;
+    border-right: 1px solid lightgray;
+}
+
+.top-part .email{
+    padding-left: 40px;
+    border-left: 1px solid lightgray
+}
+footer {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .business-hours,
+  .contact-us {
+    flex: 1;
+  }
+  
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  .contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #555;
+  }
+
+  h1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: brown;
+  }
+
+
+@media (max-width: 1090px){
+
+  label{
+      font-size: 14px;
+  }
+
+  .footer-content{
+      font-size: 10px;
+    }
+    h4{
+      font-size: 14px;
+    }
+
+    h1{
+      transform: translateX(-5px);
+    }
+
+    .top-part .reserve{
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .reserve{
+      width: 145px;
+    }
+
+    .top-part .address{
+      padding-right: 10px;
+  }
+  
+  .top-part .email{
+      padding-left: 10px;
+  }
+
+
+
+    h3{
+      font-size: 14px;
+    }
+    .top-part label{
+      font-size: 9px;
+    }
+
+
+    
+
+
+}
+
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+form{
+  width: 90%;
+  max-width: 600px;
+
+}
+
+.input-group{
+  margin-bottom: 30px;
+  position: relative;
+}
+
+input,textarea{
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  font-size: 15;
+  border-radius: 5px;
+}
+
+.hero label{
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  cursor: text;
+  font-size: 16px;
+  color: gray;
+  transition: .2s;
+  pointer-events: none;
+}
+
+.submit-button{
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+  color: #222327;;
+  background-color: white;
+  transition: .75s;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.submit-button:hover{
+  background-color: #222327;;
+  color: white;
+
+}
+
+input:focus~label,
+input:valid~label,
+input:not(:placeholder-shown)~label,
+textarea:focus~label,
+textarea:valid~label{
+  top: -35px;
+  font-size: 14px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row .input-group{
+  flex-basis: 48%;
+}

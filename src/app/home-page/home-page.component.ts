@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+
 import * as AOS from 'aos';
 
 @Component({
@@ -14,5 +17,7 @@ export class HomePageComponent implements OnInit {
       duration: 1500
     });
   }
+
+
 
 }

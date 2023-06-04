@@ -9,9 +9,13 @@ body{
     width: auto;
     height: auto;
     object-fit: cover;
-    border-bottom: 3.5px solid black;
+    border-bottom: 1px solid black;
 }
 
+
+.reserveImage{
+  max-height: 450px;
+}
 h1{
     z-index: 1;
     position: absolute;
@@ -19,9 +23,19 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 40px;
-    font-family: cursive;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
     color: black;
+}
+
+.top-text{
+  color: white;
+  background-color: rgb(0,0,0, .4);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-style: italic;
 }
 
 h2{
@@ -66,7 +80,7 @@ h2{
     max-height: 550px;
     min-width: 100%;
     object-fit: cover;
-    border-top: 3.5px solid black;
+    border-top: 1x solid black;
     border-bottom: 1px solid black;
 
   }
@@ -242,8 +256,11 @@ h2{
 
   @media(max-width: 1090px){
 
+
+
     .top-text{
-        font-size: 35px;
+        font-size: 28px;
+        width: 350px;
     }
 
     .image-container{
@@ -252,12 +269,18 @@ h2{
         width: auto;
         height: auto;
         object-fit: cover;
-        border-bottom: 3.5px solid black;
+        border-bottom: 1px solid black;
+        transform: translateX(-300px);
+    }
+
+    .top-part{
+      width: fit-content
     }
 
     .info-part h2{
         font-size: 14px;
     }
+
     .info-part p{
         font-size: 10px;
         margin-left: 7.5%;
@@ -268,7 +291,7 @@ h2{
         max-height: 450px;
         min-width: 100%;
         object-fit: cover;
-        border-top: 3.5px solid black;
+        border-top: 1px solid black;
         border-bottom: 1px solid black;
       }
 
@@ -341,4 +364,71 @@ h2{
     font-size: 17px;
   }
 
+  .logo-container{
+  }
+
+  
+  .logo-container{
+    transform: translateX(-35px);
+  }
+
+  .order-online-text h2{
+    font-size: 30px;
+  }
+
 }
+
+.order-online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  max-width: 70%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.logo-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 70%;
+  transform: translateX(60px);
+}
+
+
+.logo-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 36.5%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: width 1s ease;
+}
+
+.logo-wrapper:hover::after {
+  width: 70%;
+}
+
+
+.order-online-text h2{
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  font-style: none;
+}
+
+

@@ -1,4 +1,6 @@
-import { Component, Renderer2, ElementRef} from '@angular/core';
+import { Component, Renderer2, ElementRef, AfterViewInit, OnInit} from '@angular/core';
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs';
 
 
 
@@ -8,8 +10,12 @@ import { Component, Renderer2, ElementRef} from '@angular/core';
   styleUrls: ['./nav-bar.component.css'],
 })
 
-export class NavBarComponent{
-  constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
+export class NavBarComponent implements OnInit{
+
+  ngOnInit(): void {
+      
+  }
+  constructor(private renderer: Renderer2, private elementRef: ElementRef, private router: Router) {}
 
 
   toggleMenu() {
@@ -22,6 +28,22 @@ export class NavBarComponent{
     }
   }
 
+  scrollToTargetSection() {
+    const targetElement = document.getElementById('target-section');
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  navigateAndScroll() {
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        this.scrollToTargetSection();
+      }, 100);
+    });
+  }
+
+}
 
  
-}
+

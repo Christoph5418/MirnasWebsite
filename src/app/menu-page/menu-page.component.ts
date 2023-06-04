@@ -1,5 +1,5 @@
 import { Component, Renderer2, ElementRef, OnInit, AfterViewInit} from '@angular/core';
-import {lunchMenu, dinnerMenu, dinnerSpecialsMenu, desertMenu} from "../foods"
+import {lunchMenu, dinnerMenu, dinnerSpecialsMenu, desertMenu} from "../foods";
 
 interface men{
     item: string;
@@ -98,6 +98,7 @@ export class MenuPageComponent implements OnInit, AfterViewInit{
   lunchClick(){
     this.activeMenu = this.lunchMenu;
     this.name = "Lunch";
+    
   }
 
   dinnerClick(){

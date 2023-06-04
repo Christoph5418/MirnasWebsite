@@ -1,12 +1,12 @@
 <body>
     <header>
-        <label  class= "logo scroll-disappear"  routerLink = "/" >Mirna's Cafe</label>
+        <a  class= "logo"  href = "/" >Mirna's Cafe</a>
         <ul class = "navbar">
-            <li><label routerLink = "/" class ="active">Home</label></li>
-            <li><label routerLink="/menu">Menu</label></li>
+            <li><a href="/menu">Menu</a></li>
             <li><a target ="_blank" href = "https://tableagent.com/philadelphia/mirnas-cafe/">Reserve</a></li>
-            <li><label routerLink="/private-parties">Private Parties</label></li>
-            <li><label routerLink ="/contact-us">Contact Us</label></li>
+            <li><a href="/private-parties">Private Parties</a></li>
+            <li><a href ="/contact-us">Contact Us</a></li>
+            <li><a (click)="navigateAndScroll()">Order</a></li>
 
         </ul>
         <div class = "main">
