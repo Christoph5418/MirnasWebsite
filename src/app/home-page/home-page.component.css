@@ -74,6 +74,7 @@ h2{
     height: auto;
     display: flex;
     align-items: center;
+    
 
   }
   .image-container1 img{
@@ -254,7 +255,7 @@ h2{
   }
   
 
-  @media(max-width: 1090px){
+  @media(max-width: 675px){
 
 
 

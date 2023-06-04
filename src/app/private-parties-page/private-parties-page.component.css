@@ -89,7 +89,7 @@ img{
     opacity: .8;
 }
 
-@media(max-width: 1090px){
+@media(max-width: 675px){
     .card{
         display: block;
     }
@@ -197,7 +197,7 @@ textarea:valid~label{
     flex-basis: 48%;
 }
 
-@media (max-width: 1090px){
+@media (max-width: 675px){
  
     .card p{
         font-size: 12px;

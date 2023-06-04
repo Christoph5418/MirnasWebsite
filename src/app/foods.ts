@@ -8,7 +8,7 @@ export const lunchMenu =[
     },    {
       item: "Crab Bisque Soup",
       price: "7.50",
-      description: "I need a description here",
+      description: "Smooth and creamy seasoned soup with fresh crabmeat, served hot",
       pic: "",
       type: "soup",
     },    {
@@ -749,19 +749,14 @@ export const dinnerMenu = [
 export const dinnerSpecialsMenu =[
   {
     item: "Crab Bisque",
-    description: "I need a description here",
+    description: "Smooth and creamy seasoned soup with fresh crabmeat, served hot",
     price: "",
     pic: "",
     type: "soup",
-  },{
-    item: "Cream of Broccoli",
-    description: "I need a description here",
-    price: "",
-    pic: "",
-    type: "soup",
-  },{
+  },
+  {
     item: "Cold Gazpacho Soup",
-    description: "I need a description here",
+    description: "A friendly vegetarian soup",
     price: "",
     pic: "",
     type: "soup",
