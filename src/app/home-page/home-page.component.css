@@ -40,7 +40,6 @@ h1{
 
 h2{
     color: brown;
-    font-style: italic;
     font-size: 21px;
 }
 
@@ -48,15 +47,15 @@ h2{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 .info-part p{
     margin-top: 25px;
     margin-left: 12.5%;
     margin-right: 12.5%;
-    font-size: 14px;
+    font-size: 14.5px;
     color: rgb(78, 78, 78);
 }
 
@@ -116,7 +115,8 @@ h2{
     display: flex;
     align-items: center;
 
-
+    margin-left: 7.5%;
+    margin-right: 7.5%;
   }
   
   .private-parties-part img {
@@ -170,7 +170,8 @@ h2{
     display: flex;
     align-items: center;
 
-
+    margin-left: 7.5%;
+    margin-right: 7.5%;
   }
   
   .reserve-part img {
@@ -253,7 +254,59 @@ h2{
   .contact-btn:hover {
     background-color: #555;
   }
+
+  .order-online-text h2{
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    font-style: none;
+  }
   
+
+.order-online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  max-width: 70%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+.logo-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 70%;
+  transform: translateX(60px);
+}
+
+
+.logo-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 36.5%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: black;
+  transition: width 1s ease;
+}
+
+.logo-wrapper:hover::after {
+  width: 70%;
+}
 
   @media(max-width: 675px){
 
@@ -283,9 +336,9 @@ h2{
     }
 
     .info-part p{
-        font-size: 10px;
-        margin-left: 7.5%;
-        margin-right: 7.5%;
+        font-size: 12px;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .image-container1 img{
@@ -365,8 +418,6 @@ h2{
     font-size: 17px;
   }
 
-  .logo-container{
-  }
 
   
   .logo-container{
@@ -374,62 +425,9 @@ h2{
   }
 
   .order-online-text h2{
-    font-size: 30px;
+    font-size: 35px;
   }
 
-}
-
-.order-online {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-
-.logo {
-  max-width: 70%;
-  height: auto;
-  position: relative;
-  cursor: pointer;
-  
-}
-
-.logo-wrapper {
-  position: relative;
-  display: inline-block;
-  max-width: 70%;
-  transform: translateX(60px);
-}
-
-
-.logo-wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 36.5%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 3px;
-  background-color: black;
-  transition: width 1s ease;
-}
-
-.logo-wrapper:hover::after {
-  width: 70%;
-}
-
-
-.order-online-text h2{
-  align-items: center;
-  text-align: center;
-  font-size: 40px;
-  font-style: none;
 }
 
 
