@@ -804,7 +804,7 @@ export const dinnerSpecialsMenu =[
     type: "appetizer",
   },    {
     item: "Pistachio Encrusted Salmon",
-    description: "Served over sweet mashed potato topped with a bell pepper, shallots, and lemon buere blanc sauc",
+    description: "Served over sweet mashed potato topped with a bell pepper, shallots, and lemon buere blanc sauce",
     price: "",
     pic: "",
     type: "entree",

@@ -9,7 +9,7 @@ body{
     overflow: hidden;
 }
 
-a{
+label{
     color: #333;
     text-decoration: none;
 }
@@ -258,29 +258,33 @@ footer {
     text-align: center;
   }
   
-  .business-hours,
+footer .business-hours,
   .contact-us {
     flex: 1;
   }
   
-  h4 {
+  footer h4 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  ul {
+  footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
   }
   
-  li {
+  footer li {
     margin-bottom: 5px;
+    font-size: 16px;
+  }
+  footer p{
+    font-size: 16px;
   }
   
-  .contact-btn {
+  footer .contact-btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333;
@@ -290,6 +294,6 @@ footer {
     transition: background-color 0.3s ease;
   }
   
-  .contact-btn:hover {
+  footer .contact-btn:hover {
     background-color: #555;
   }
