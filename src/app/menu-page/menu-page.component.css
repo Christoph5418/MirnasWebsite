@@ -162,6 +162,26 @@ body{
     border-radius: 15px;
 }
 
+.reserve-fixed{
+    position: fixed;
+    right: 6%;
+    bottom: 6%;
+    padding: 15px;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: ease .5s;
+    color: white;
+  }
+  
+  .reserve-fixed:hover{
+    background-color: rgb(67, 67, 67);
+  }
+
+  a{
+    color: white;
+  }
 
 @media (max-width: 1980px)
 {
@@ -220,6 +240,15 @@ body{
         margin-left: 150px;
 
     }
+
+    .reserve-fixed{
+        position: fixed;
+        right: 4%;
+        bottom: 4%;
+        padding: 15px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
 }
 
 h3{
@@ -239,7 +268,7 @@ h3{
 }
 
 .salad-text{
-    width: 385px;
+    width: 395px;
     font-style: italic;
     border: 2px solid black;
     padding: 5px;

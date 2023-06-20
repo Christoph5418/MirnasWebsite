@@ -9,13 +9,16 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { PrivatePartiesPageComponent } from './private-parties-page/private-parties-page.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
+import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomePageComponent},
   {path: 'menu', component: MenuPageComponent},
   {path: 'private-parties', component: PrivatePartiesPageComponent},
   {path: 'contact-us', component: ContactUsPageComponent},
-]
+  {path: 'about-us', component: AboutUsPageComponent},
+
+];
 
 
 @NgModule({
@@ -25,6 +28,8 @@ const appRoutes: Routes = [
     MenuPageComponent,
     PrivatePartiesPageComponent,
     ContactUsPageComponent,
+    HomePageComponent,
+    AboutUsPageComponent,
   ],
   imports: [
     BrowserModule,

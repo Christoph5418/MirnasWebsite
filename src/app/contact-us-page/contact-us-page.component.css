@@ -159,6 +159,26 @@ footer {
     color: brown;
   }
 
+  .reserve-fixed{
+    position: fixed;
+    right: 6%;
+    bottom: 6%;
+    padding: 15px;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: ease .5s;
+  }
+  
+  .reserve-fixed:hover{
+    background-color: rgb(67, 67, 67);
+  }
+
+  a{
+    color: white;
+  }
+
 
 @media (max-width: 675px){
 
@@ -204,7 +224,14 @@ footer {
     }
 
 
-    
+    .reserve-fixed{
+      position: fixed;
+      right: 4%;
+      bottom: 4%;
+      padding: 15px;
+      font-size: 12px;
+      border-radius: 10px;
+    }
 
 
 }

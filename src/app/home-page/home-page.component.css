@@ -127,15 +127,12 @@ h2{
     border: 1px solid black;
     border-radius: 10px;
   }
-  
   .private-parties-text {
-    flex: 1;
-    padding-left: 20px; /* Adjust the padding as needed */
-    transform: translateY(-50px);
+    left: 50%;
+    right: 50%;
     padding: 50px;
-    transform: translateX(25px);
-
-
+    transform: translateX(16px);
+    
   }
   
   .private-parties-text h4 {
@@ -166,6 +163,13 @@ h2{
     color: brown;
   }
 
+  .private-parties-text .pp-btn{
+
+    align-items: center;
+    justify-content: center;
+    left: 20%;
+  }
+
   .reserve-part {
     display: flex;
     align-items: center;
@@ -186,19 +190,24 @@ h2{
   }
   
   .reserve-text {
-    flex: 1;
-    padding-left: 20px; /* Adjust the padding as needed */
-    transform: translateY(-50px);
+    left: 50%;
+    right: 50%;
     padding: 50px;
-    transform: translateX(25px);
-
-
+    transform: translateX(16px);
+    
   }
 
   .reserve-text h4 {
     font-size: 30px; /* Adjust the font size as needed */
     font-weight: bold;
     color: brown; /* Adjust the color as needed */
+  }
+
+  .reserve-text .pp-btn{
+
+    align-items: center;
+    justify-content: center;
+    left: 30%;
   }
 
   .reserve-part p{
@@ -312,13 +321,33 @@ h2{
   width: 70%;
 }
 
+.reserve-fixed{
+  position: fixed;
+  right: 6%;
+  bottom: 6%;
+  padding: 15px;
+  background-color: black;
+  border: 1px solid white;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: ease .5s;
+}
+
+a{
+  color: white;
+}
+
+.reserve-fixed:hover{
+  background-color: rgb(67, 67, 67);
+}
+
   @media(max-width: 675px){
 
 
 
     .top-text{
         font-size: 28px;
-        width: 350px;
+        width: 285px;
     }
 
     .image-container{
@@ -328,7 +357,6 @@ h2{
         height: auto;
         object-fit: cover;
         border-bottom: 1px solid black;
-        transform: translateX(-300px);
     }
 
     .top-part{
@@ -341,8 +369,8 @@ h2{
 
     .info-part p{
         font-size: 12px;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: -5%;
+        margin-right: -5%;
     }
 
     .image-container1 img{
@@ -364,7 +392,7 @@ h2{
         transform: translateX(0px);
   }
 
-  .reserve-text{
+  .reserve-text p{
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -374,12 +402,18 @@ h2{
     width: 400px;
     margin-left: 0;
     margin-right: 0;
-    transform: translateX(-17.5px);
     font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-15px);
   }
   .reserve-text .pp-btn{
-    position: absolute;
-    transform: translateX(-80px);
+
+    position: relative;
+    transform: translateX(300px);
+    
+
   }
 
 
@@ -394,21 +428,35 @@ h2{
   }
 
   .private-parties-text{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    left: 50%;
+    right: 50%;
+    padding: 50px;
+    transform: translateX(20px);
+
   }
 
   .private-parties-text h4{
     width: 400px;
     margin-left: 0;
     margin-right: 0;
-    transform: translateX(-17.5px);
     font-size: 26px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-15px);
+  }
+
+  .private-parties-text p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .private-parties-text .pp-btn{
-    position: absolute;
-    transform: translateX(-125px);
+
+    position: relative;
+    transform: translateX(300px);
+    
+
   }
 
   .footer-content{
@@ -432,6 +480,14 @@ h2{
     font-size: 35px;
   }
 
+  .reserve-fixed{
+    position: fixed;
+    right: 4%;
+    bottom: 4%;
+    padding: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
 }
 
 

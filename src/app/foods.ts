@@ -2,7 +2,13 @@ export const lunchMenu =[
     {
       item: "Soup Du Jour",
       price: "6.00",
-      description: "Our Special Selection",
+      description: "Our special selection",
+      pic: "",
+      type: "soup",
+    },    {
+      item: "Vegetarian Soup Du Jour",
+      price: "6.00",
+      description: "Our special vegetarian soup",
       pic: "",
       type: "soup",
     },    {
@@ -411,6 +417,12 @@ export const dinnerMenu = [
       item: "Soup Du Jour",
       description: "Our special selection",
       price: "",
+      pic: "",
+      type: "soup",
+    },    {
+      item: "Vegetarian Soup Du Jour",
+      price: "6.00",
+      description: "Our special vegetarian soup",
       pic: "",
       type: "soup",
     },    {

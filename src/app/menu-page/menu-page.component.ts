@@ -1,5 +1,8 @@
 import { Component, Renderer2, ElementRef, OnInit, AfterViewInit} from '@angular/core';
 import {lunchMenu, dinnerMenu, dinnerSpecialsMenu, desertMenu} from "../foods";
+import {Router, NavigationEnd} from '@angular/router';
+import { filter } from 'rxjs/operators';
+
 
 interface men{
     item: string;
@@ -24,7 +27,14 @@ export class MenuPageComponent implements OnInit, AfterViewInit{
 
 
 
-  constructor(private renderer: Renderer2, private elementRef: ElementRef) {
+  constructor(private renderer: Renderer2, private elementRef: ElementRef, private router: Router) {
+
+    this.router.events
+    .pipe(filter(event => event instanceof NavigationEnd))
+    .subscribe(() => {
+      window.scrollTo(0, 0);
+    });
+    
   }
 
   ngOnInit(): void {
@@ -46,7 +56,7 @@ export class MenuPageComponent implements OnInit, AfterViewInit{
         tempMenu[i * 2] = this.lunchMenu[i];
       }
       let x: number = 0;
-      for(let i = (this.lunchMenu.length / 2); i < this.lunchMenu.length; i++)
+      for(let i = Math.ceil((this.lunchMenu.length / 2)); i < this.lunchMenu.length; i++)
       {
          tempMenu[x * 2 + 1] = this.lunchMenu[i];
          x++;
@@ -62,7 +72,7 @@ export class MenuPageComponent implements OnInit, AfterViewInit{
         tempMenu[i * 2] = this.dinnerMenu[i];
       }
  
-      for(let i = (this.dinnerMenu.length / 2); i < this.dinnerMenu.length; i++){
+      for(let i = Math.ceil((this.dinnerMenu.length / 2)); i < this.dinnerMenu.length; i++){
          tempMenu[x * 2 + 1] = this.dinnerMenu[i];
          x++;
       }
@@ -75,7 +85,7 @@ export class MenuPageComponent implements OnInit, AfterViewInit{
         tempMenu[i * 2] = this.dinnerSpecialsMenu[i];
       }
  
-      for(let i = (this.dinnerSpecialsMenu.length / 2); i < this.dinnerSpecialsMenu.length; i++){
+      for(let i = Math.ceil((this.dinnerSpecialsMenu.length / 2)); i < this.dinnerSpecialsMenu.length; i++){
          tempMenu[x * 2 + 1] = this.dinnerSpecialsMenu[i];
          x++;
       }

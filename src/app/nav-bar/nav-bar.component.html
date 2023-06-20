@@ -1,12 +1,14 @@
 <body>
     <header>
-        <label  class= "logo"  routerLink = "/" >Mirna's Cafe</label>
+        <label  class= "logo" routerLink = "/" >Mirna's Café</label>
         <ul class = "navbar">
-            <li><label routerLink="/menu">Menu</label></li>
-            <li><a target ="_blank" href = "https://tableagent.com/philadelphia/mirnas-cafe/">Reserve</a></li>
-            <li><label routerLink="/private-parties">Private Parties</label></li>
-            <li><label routerLink ="/contact-us">Contact Us</label></li>
-            <li><label (click)="navigateAndScroll()">Order</label></li>
+            <li><label (click) ='toggleMenu()' routerLink="/">Home</label></li>
+            <li><label (click) ='toggleMenu()' routerLink="/menu">Menu</label></li>
+            <li><a (click) ='toggleMenu()' target ="_blank" href = "https://tableagent.com/philadelphia/mirnas-cafe/">Reserve</a></li>
+            <li><label (click) ='toggleMenu()' routerLink="/private-parties">Private Parties</label></li>
+            <li><label (click) ='toggleMenu()' routerLink ="/contact-us">Contact Us</label></li>
+            <li><label (click) ='toggleMenu()' routerLink ="/about-us">About Us</label></li>
+            <li><label (click)="navigateAndScroll(); toggleMenu()">Order</label></li>
 
         </ul>
         <div class = "main">

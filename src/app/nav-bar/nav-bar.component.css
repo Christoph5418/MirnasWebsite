@@ -27,13 +27,12 @@ header{
 .logo{
     display: flex;
     align-items: center;
-    font-family: 'Great Vibes', cursive;
-    font-size: 40px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
     color: white;
 }
 
 .logo:hover{
-    color: var(--main-color);
     transition: all .50s ease;
     cursor: pointer;
 }
@@ -45,7 +44,7 @@ header{
 
 .logo span{
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -55,19 +54,19 @@ header{
 
 .navbar label{
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: .85rem;
     font-weight: 500;
     padding: 5px 0;
-    margin: 0 30px;
+    margin: 0 23px;
     transition: all .50s ease;
 }
 
 .navbar a{
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: .85rem;
     font-weight: 500;
     padding: 5px 0;
-    margin: 0 30px;
+    margin: 0 25px;
     transition: all .50s ease;
 }
 
@@ -134,7 +133,7 @@ header{
     display: none;
 }
 
-@media (max-width: 1090px)
+@media (max-width: 1165px)
 {
     header{
         padding: 14px 2%;
@@ -155,7 +154,7 @@ header{
 
 }
 
-@media (max-width: 1090px){
+@media (max-width: 1165px){
     header{
         position: fixed;
     }
@@ -168,7 +167,7 @@ header{
         top: 100%;
         right: -100%;
         width: 200px;
-        height: 36vh;
+        height: 43.5vh;
         background: var(--main-color);
         display: flex;
         flex-direction: column;

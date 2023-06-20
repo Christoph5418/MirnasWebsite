@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
-import { filter } from 'rxjs/operators';
 import {Router, NavigationEnd} from '@angular/router'
+import { filter } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-private-parties-page',
-  templateUrl: './private-parties-page.component.html',
-  styleUrls: ['./private-parties-page.component.css']
+  selector: 'app-about-us-page',
+  templateUrl: './about-us-page.component.html',
+  styleUrls: ['./about-us-page.component.css']
 })
-export class PrivatePartiesPageComponent implements OnInit {
+export class AboutUsPageComponent implements OnInit{
+
 
   constructor(private router: Router) {
 
@@ -17,17 +18,14 @@ export class PrivatePartiesPageComponent implements OnInit {
     .subscribe(() => {
       window.scrollTo(0, 0);
     });
-
+    
   }
 
   ngOnInit(): void {
     AOS.init({
       offset: 300,
-      duration: 1000
+      duration: 1500
     });
   }
 
-
-  }
-
-
+}

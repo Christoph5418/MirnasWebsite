@@ -89,6 +89,26 @@ img{
     opacity: .8;
 }
 
+.reserve-fixed{
+    position: fixed;
+    right: 6%;
+    bottom: 6%;
+    padding: 15px;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: ease .5s;
+  }
+  
+  .reserve-fixed:hover{
+    background-color: rgb(67, 67, 67);
+  }
+
+  a{
+    color: white;
+  }
+
 @media(max-width: 675px){
     .card{
         display: block;
@@ -197,53 +217,6 @@ textarea:valid~label{
     flex-basis: 48%;
 }
 
-@media (max-width: 675px){
- 
-    .card p{
-        font-size: 12px;
-    }
-    .card h3{
-        font-size: 15px;
-    }
-
-    .card img{
-        max-height: 200px;
-    }
-
-    .main-header h1{
-        font-size: 35px;
-    }
-
-    .main-header p{
-        font-size: 20px;
-    }
-
-    .btn{
-        font-size: 14px;;
-    }
-
-    label{
-        font-size: 14px;
-    }
-
-    .footer-content{
-        font-size: 10px;
-      }
-      h4{
-        font-size: 14px;
-      }
-    
-      .menu-text{
-        font-size: 17px;
-      }
-
-      footer p{
-        font-size: 12px;
-      }
-
-
-
-}
 
 footer {
     background-color: #f2f2f2;
@@ -297,3 +270,68 @@ footer .business-hours,
   footer .contact-btn:hover {
     background-color: #555;
   }
+
+
+@media (max-width: 675px){
+ 
+    .card p{
+        font-size: 12px;
+    }
+    .card h3{
+        font-size: 15px;
+    }
+
+    .card img{
+        max-height: 200px;
+    }
+
+    .main-header h1{
+        font-size: 35px;
+    }
+
+    .main-header p{
+        font-size: 20px;
+    }
+
+    .btn{
+        font-size: 14px;;
+    }
+
+    label{
+        font-size: 14px;
+    }
+
+    .footer-content{
+        font-size: 10px;
+      }
+      h4{
+        font-size: 14px;
+      }
+    
+      .menu-text{
+        font-size: 17px;
+      }
+
+      footer p{
+        font-size: 12px;
+      }
+
+      .reserve-fixed{
+        position: fixed;
+        right: 4%;
+        bottom: 4%;
+        padding: 15px;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+
+      .footer-content p{
+        font-size: 12px;
+      }
+
+      .business-hours li{
+        font-size: 12px;
+      }
+
+
+}
